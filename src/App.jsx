@@ -35,7 +35,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
 
-        {user && (
+        {user ? (
           <>
             <Route path="/home" element={<Home />} />
             <Route path="/headphones" element={<Headphones />} />
@@ -48,6 +48,8 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/about" element={<About />} />
           </>
+        ) : (
+          navigate("/login")
         )}
       </Routes>
       <Footer />

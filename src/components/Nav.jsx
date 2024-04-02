@@ -20,7 +20,7 @@ function NavLinks() {
     <ul className="hidden lg:flex gap-[34px]">
       <li>
         <Link
-          to="/"
+          to="/home"
           className="hover:text-brightOrange transition-colors duration-300"
         >
           HOME

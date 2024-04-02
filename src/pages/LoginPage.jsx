@@ -53,13 +53,15 @@ function LoginPage() {
         storedUser.password === password
       ) {
         setLoginTrue(true);
+        navigate("/home");
         setIsLoading(false);
       } else {
         setIsLoading(false);
-        console.log("Invalid credentials");
+        navigate("/login");
+        alert("Invalid credentials");
       }
     } else {
-      console.log("Form validation failed!");
+      alert("Form validation failed!");
     }
   };
 
@@ -101,7 +103,6 @@ function LoginPage() {
             type="submit"
             className="rounded-sm py-4 px-24 text-sm text-white bg-[#FC4747] mb-6 w-full"
             disabled={isLoading}
-            onClick={() => navigate(loginTrue ? "/home" : "/login")}
           >
             {isLoading ? "Sending..." : "Login"}
           </button>
