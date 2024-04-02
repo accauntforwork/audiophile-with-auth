@@ -101,7 +101,7 @@ function LoginPage() {
             type="submit"
             className="rounded-sm py-4 px-24 text-sm text-white bg-[#FC4747] mb-6 w-full"
             disabled={isLoading}
-            onClick={() => navigate(loginTrue ? "/mainmeny" : "/login")}
+            onClick={() => navigate(loginTrue ? "/" : "/login")}
           >
             {isLoading ? "Sending..." : "Login"}
           </button>
