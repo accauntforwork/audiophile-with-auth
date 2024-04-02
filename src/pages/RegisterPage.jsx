@@ -55,6 +55,7 @@ function RegisterPage() {
       const password = passwordRef.current.value.trim();
 
       localStorage.setItem("user", JSON.stringify({ email, password }));
+      console.log(58, JSON.stringify({ email, password }));
 
       setIsLoading(false);
       navigate("/login");

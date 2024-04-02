@@ -26,7 +26,6 @@ function App() {
       navigate("/login"); // Redirect to login if no token found
     } else {
       setUser(storedUser);
-      navigate("/");
     }
   }, []);
   return (
@@ -38,7 +37,7 @@ function App() {
 
         {user && (
           <>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/headphones" element={<Headphones />} />
             <Route path="/speakers" element={<Speakers />} />
             <Route path="/earphones" element={<Earphones />} />
