@@ -26,6 +26,7 @@ function App() {
       navigate("/login"); // Redirect to login if no token found
     } else {
       setUser(storedUser);
+      navigate("/");
     }
   }, []);
   return (
