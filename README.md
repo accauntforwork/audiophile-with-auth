@@ -1,0 +1,13 @@
+- **Bajarilishi kerak**
+    - Siz yasagan sayt dizayni berilgan figma bo’yicha bir xil bo’lishi kerak. (responsive shart) **`(5) ball`**
+        - **`font`**lar offline ulangan bo’lishi
+        - agar tailwinddan foydalansangiz classlarni qayta-qayta yozmaslik uchun `**@component @layer**` **`@apply`** dan foydalaning.
+        - rasmlarni optimallashtiring.
+
+    - **`LINK & FILE`** bo’limida `**data.json**` fayli bor. `**json-live-server**` dan foydalanib ushbu faylga so’rov jo’natasiz.**`(5) ball`**
+    - Loyihada `**loader**`, `**error**` ko’rsatilinishi shart. **`(5) ball`**
+    - tailwind, daisy ui lardan foydalanishingiz yoki o’zingiz css da qilishingiz mumkin, lekin figma dizayndan chetlashmagan holatda. **`(5) ball`**
+    - ma’lumotlarni loyiha bo’yicha almashishi uchun redux-toolkit dan foydalaning va ma’lumotlar localStorageda saqlansin. `**(5) ball**`
+    - faqat `**netlify & vercel**`’ va `**github**`ga ****joylangan bo’lishi shart. React Router DOM (layouts) dan to’g’ri foydalanganlik **`(5) ball`**
+    - Loyihangizga kirish uchun ro’yxatdan o’tish shart bo’lishi lozim, buning uchun **`firebase auth`** dan foydalaning. (*firebase faqat ro’yxatdan o’tish uchun kerak bo’ladi*) **`(5) ball`**
+    - Ro’yxatdan o’tish gmail va o’zingiz email password kiritish orqali amalga oshililgan bo’lishi kerak. **`(5) ball`**
